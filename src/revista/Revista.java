@@ -86,21 +86,16 @@ public class Revista {
             java.util.Scanner lectura = new java.util.Scanner(System.in);
             Nombre[i]=lectura.next();            
             System.out.println("Ingrese la edad del cliente");
-            java.util.Scanner lectura0 = new java.util.Scanner(System.in);
             Edad[i]=lectura.nextInt();
             System.out.println("Ingrese el genero (masculino/femenino)");
-            java.util.Scanner lectura2 = new java.util.Scanner(System.in);
-            Genero[i]=lectura2.next();
+            Genero[i]=lectura.next();
             System.out.println("Ingrese estado civil(soltero/casado)");
-            java.util.Scanner lectura3 = new java.util.Scanner(System.in);
-            EstadoC[i]=lectura3.next();
+            EstadoC[i]=lectura.next();
             System.out.println("Ingrese el valor anual de ingrasos del cliente");
-            java.util.Scanner lectura1 = new java.util.Scanner(System.in);
-            Ingresos[i]=lectura1.nextDouble();
+            Ingresos[i]=lectura.nextDouble();
             encuesta[i] = new Revista(Nombre[i],Edad[i],Genero[i],EstadoC[i],Ingresos[i]);
             System.out.println("Para ingresar un nuevo cliente escriba 1, de lo contrario escriba 0");
-            java.util.Scanner lectura5 = new java.util.Scanner(System.in);
-            int opcion=lectura1.nextInt();
+            int opcion=lectura.nextInt();
             boolean m;
             m = opcion==1;
             if (m==false){
